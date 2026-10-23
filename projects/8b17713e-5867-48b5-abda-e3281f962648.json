@@ -1,0 +1,14 @@
+{
+  "id":  "8b17713e-5867-48b5-abda-e3281f962648",
+  "name":  "pet%20website",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///c%3A/Users/User/Downloads/pet%20website",
+          "allowWrite":  true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "claude-code",
+  "version": "1.0.0",
+  "description": "The official codebase for Claude Code CLI and tools.",
+  "author": { "name": "anthropics" }
+}

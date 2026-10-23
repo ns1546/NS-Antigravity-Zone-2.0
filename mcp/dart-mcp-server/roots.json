@@ -1,0 +1,1 @@
+{"name":"roots","description":"Manage project roots.","parameters":{"additionalProperties":false,"properties":{"command":{"description":"The command to execute.","enum":["add","remove"],"type":"string"},"uris":{"description":"The URIs to add or remove as roots.","items":{"type":"string"},"type":"array"}},"required":["command","uris"],"type":"object"}}

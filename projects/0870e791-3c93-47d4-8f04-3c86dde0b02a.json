@@ -1,0 +1,14 @@
+{
+  "id":  "0870e791-3c93-47d4-8f04-3c86dde0b02a",
+  "name":  "digital%20network-website",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///c%3A/Users/User/Downloads/digital%20network-website",
+          "allowWrite":  true
+        }
+      }
+    ]
+  }
+}

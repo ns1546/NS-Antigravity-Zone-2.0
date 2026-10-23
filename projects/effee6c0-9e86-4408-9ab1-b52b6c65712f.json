@@ -1,0 +1,14 @@
+{
+  "id":  "effee6c0-9e86-4408-9ab1-b52b6c65712f",
+  "name":  "LexiCode-main",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///c%3A/Users/User/Downloads/LexiCode-main",
+          "allowWrite":  true
+        }
+      }
+    ]
+  }
+}

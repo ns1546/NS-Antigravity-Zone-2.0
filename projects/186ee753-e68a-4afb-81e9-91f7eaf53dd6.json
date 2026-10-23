@@ -1,0 +1,26 @@
+{
+  "id":  "186ee753-e68a-4afb-81e9-91f7eaf53dd6",
+  "name":  "New folder (47)",
+  "projectResources":  {
+    "resources":  [
+      {
+        "folderUri":  "file:///c%3A/Users/User/Downloads/New%20folder%20%2847%29"
+      }
+    ]
+  },
+  "permissionGrants":  {
+    "permissionGrants":  {
+      "allow":  [
+        "command(npx)",
+        "command(.\\venv\\Scripts\\python.exe)",
+        "command(docker-compose)"
+      ]
+    }
+  },
+  "settings":  {
+    "fileAccessPolicy":  "AGENT_SETTING_POLICY_ASK",
+    "internetPolicy":  "AGENT_SETTING_POLICY_ASK",
+    "autoExecutionPolicy":  "CASCADE_COMMANDS_AUTO_EXECUTION_OFF",
+    "artifactReviewMode":  "ARTIFACT_REVIEW_MODE_ALWAYS"
+  }
+}

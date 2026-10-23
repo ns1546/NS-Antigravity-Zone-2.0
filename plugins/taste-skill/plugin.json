@@ -1,0 +1,6 @@
+{
+  "name": "taste-skill",
+  "version": "1.0.0",
+  "description": "The Anti-Slop Frontend Framework for AI Agents. Provides specialized UI/UX layout and GSAP rules.",
+  "author": { "name": "Leonxlnx" }
+}

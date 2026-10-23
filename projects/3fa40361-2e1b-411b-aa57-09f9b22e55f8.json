@@ -1,0 +1,15 @@
+{
+  "id":  "3fa40361-2e1b-411b-aa57-09f9b22e55f8",
+  "name":  "New%20folder%20%2839%29",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///c%3A/Users/User/Downloads/New%20folder%20%2839%29",
+          "defaultBranch":  "main",
+          "allowWrite":  true
+        }
+      }
+    ]
+  }
+}

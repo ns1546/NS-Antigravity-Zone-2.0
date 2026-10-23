@@ -1,0 +1,29 @@
+{
+    "plugins":  {
+                    "android-cli-plugin":  {
+                                               "enabled":  true
+                                           },
+                    "chrome-devtools-plugin":  {
+                                                   "enabled":  false
+                                               },
+                    "flutter":  {
+                                    "enabled":  true
+                                },
+                    "gemini-api":  {
+                                       "enabled":  true
+                                   },
+                    "modern-web-guidance-plugin":  {
+                                                       "enabled":  true
+                                                   },
+                    "ns-zone":  {
+                                    "enabled":  true
+                                },
+                    "science":  {
+                                    "enabled":  false
+                                }
+                },
+    "userSettings":  {
+                         "remoteControlHostname":  "desktop-cb4aloe-super-comet",
+                         "themeMode":  "THEME_MODE_INHERIT"
+                     }
+}

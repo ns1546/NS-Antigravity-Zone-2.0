@@ -1,0 +1,14 @@
+{
+  "id":  "7eb9dda7-a150-4886-b83d-8198a9be1c0c",
+  "name":  "client-1 2",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///c%3A/Users/User/Downloads/client-1",
+          "allowWrite":  true
+        }
+      }
+    ]
+  }
+}

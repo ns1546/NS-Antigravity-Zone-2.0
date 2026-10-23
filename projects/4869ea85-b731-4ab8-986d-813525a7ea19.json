@@ -1,0 +1,14 @@
+{
+  "id":  "4869ea85-b731-4ab8-986d-813525a7ea19",
+  "name":  "MISIL%20WEBSITE 2",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///c%3A/Users/User/Downloads/MISIL%20WEBSITE",
+          "allowWrite":  true
+        }
+      }
+    ]
+  }
+}
