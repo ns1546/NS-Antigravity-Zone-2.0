@@ -1,13 +1,13 @@
 ﻿<#
 .SYNOPSIS
-  NS Antigravity Zone 2.0 - Automated Installer & Restorer
+  NS Antigravity Zone 2.0 - Automated Installer & System Restorer
 .DESCRIPTION
   Restores and installs the complete Antigravity ecosystem:
-  - Global Agent Directives & Personas
-  - Custom & Builtin Skills
-  - Rules, Standards & Architecture Guidelines
-  - Plugins & Bundled Subagents
-  - MCP Server Configurations & Schemas
+  - 116 High-Performance Engineering Skills
+  - 30 Custom Autonomous Specialist Subagents
+  - 3 Core Engineering & Architecture Rules
+  - 9 Production Tool & Feature Plugins
+  - Native MCP Server Schemas & Builtin AGY Runtime Guidance
 #>
 
 [CmdletBinding()]
@@ -18,6 +18,7 @@ param(
 
 Write-Host "============================================================" -ForegroundColor Cyan
 Write-Host "  🚀 NS Antigravity Zone 2.0 - System Deployment Engine" -ForegroundColor Yellow
+Write-Host "  Skills: 116 | Agents: 30 | Rules: 3 | Plugins: 9" -ForegroundColor Green
 Write-Host "============================================================" -ForegroundColor Cyan
 
 $sourceRoot = $PSScriptRoot
@@ -44,7 +45,7 @@ foreach ($dir in $targetDirs) {
 }
 
 # 2. Deploy Config, Rules, Agents & Skills
-Write-Host "`n[2/4] Deploying Core Directives, Agents, Rules & Standalone Skills..." -ForegroundColor Green
+Write-Host "`n[2/4] Deploying Core Directives, 30 Custom Agents, 3 Rules & 116 Skills..." -ForegroundColor Green
 
 $coreFiles = @("AGENTS.md", "GEMINI.md", "config.json", "mcp_config.json")
 foreach ($file in $coreFiles) {
@@ -54,23 +55,27 @@ foreach ($file in $coreFiles) {
   }
 }
 
-$coreFolders = @("agents", "rules", "skills", "sidecars", "projects")
-foreach ($folder in $coreFolders) {
-  if (Test-Path "$sourceRoot\$folder") {
-    robocopy "$sourceRoot\$folder" "$GeminiConfigPath\$folder" /E /XD .git /NFL /NDL /NJH /NJS | Out-Null
-    $count = (Get-ChildItem -Path "$sourceRoot\$folder" -Directory -ErrorAction SilentlyContinue).Count
-    Write-Host "  ✔ Synced $folder folder ($count items)" -ForegroundColor White
-  }
-}
+# Deploy 30 Agents
+robocopy "$sourceRoot\agents" "$GeminiConfigPath\agents" /E /XD .git /NFL /NDL /NJH /NJS | Out-Null
+$agentCount = (Get-ChildItem -Path "$sourceRoot\agents" -Filter "*.md").Count
+Write-Host "  ✔ Synced $agentCount Custom Agents" -ForegroundColor Cyan
 
-# 3. Deploy Plugins
-Write-Host "`n[3/4] Deploying Antigravity Plugins & Bundled Subagents..." -ForegroundColor Green
-if (Test-Path "$sourceRoot\plugins") {
-  robocopy "$sourceRoot\plugins" "$GeminiConfigPath\plugins" /E /XD .git /NFL /NDL /NJH /NJS | Out-Null
-  $pluginList = Get-ChildItem -Path "$sourceRoot\plugins" -Directory
-  foreach ($p in $pluginList) {
-    Write-Host "  ✔ Plugin Active: $($p.Name)" -ForegroundColor Magenta
-  }
+# Deploy 3 Rules
+robocopy "$sourceRoot\rules" "$GeminiConfigPath\rules" /E /XD .git /NFL /NDL /NJH /NJS | Out-Null
+$ruleCount = (Get-ChildItem -Path "$sourceRoot\rules" -Filter "*.md").Count
+Write-Host "  ✔ Synced $ruleCount Core Rules" -ForegroundColor Cyan
+
+# Deploy 116 Skills
+robocopy "$sourceRoot\skills" "$GeminiConfigPath\skills" /E /XD .git /NFL /NDL /NJH /NJS | Out-Null
+$skillCount = (Get-ChildItem -Path "$sourceRoot\skills" -Directory).Count
+Write-Host "  ✔ Synced $skillCount Engineering Skills" -ForegroundColor Cyan
+
+# 3. Deploy 9 Plugins
+Write-Host "`n[3/4] Deploying 9 Production Plugins..." -ForegroundColor Green
+robocopy "$sourceRoot\plugins" "$GeminiConfigPath\plugins" /E /XD .git /NFL /NDL /NJH /NJS | Out-Null
+$pluginList = Get-ChildItem -Path "$sourceRoot\plugins" -Directory
+foreach ($p in $pluginList) {
+  Write-Host "  ✔ Plugin Active: $($p.Name)" -ForegroundColor Magenta
 }
 
 # 4. Deploy Builtin Skills & MCP Schemas
@@ -85,5 +90,5 @@ if (Test-Path "$sourceRoot\mcp") {
 }
 
 Write-Host "`n============================================================" -ForegroundColor Cyan
-Write-Host "  🎉 All Antigravity Zone 2.0 functions successfully deployed!" -ForegroundColor Green
+Write-Host "  🎉 All 116 Skills, 30 Agents, 3 Rules & 9 Plugins Successfully Deployed!" -ForegroundColor Green
 Write-Host "============================================================`n" -ForegroundColor Cyan
